@@ -1,17 +1,249 @@
-.container-topo {
-  display: flex;
-  width: 1728px;
+.header {
+  width: Fixed (1, 728px) px;
   height: Hug (100px) px;
   padding: 20px 236px 20px 236px;
   gap: 0px;
   border: 0px 0px 2px 0px;
   justify-content: space-between;
   opacity: 0px;
+  display: flex;
+  background-color: var(--color-gray-1);
+  /* color: var(--color-gray-7); */
 }
 
 img {
-  width: 200px;
-  height: 20.8px;
+  max-width: 200px;
+  max-height: 70.8px;
   gap: 0px;
   opacity: 0px;
 }
+
+.componente {
+  width: Hug (266px) px;
+  height: Fixed (60px) px;
+  padding: 20px 32px 20px 32px;
+  gap: 10px;
+  border: 1px solid white;
+  opacity: 0px;
+  color: var(--color-gray-7);
+  background-color: var(--color-gray-1);
+}
+
+.banner {
+  width: Fixed (1, 728px) px;
+  height: Hug (781px) px;
+  /* margin-top: 100px; */
+  padding: 250px 236px 250px 236px;
+  gap: 44px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-gray-2);
+  color: var(--color-gray-7);
+}
+
+span {
+  color: var(--color-band-2);
+}
+
+.banner__text1 {
+  width: Fixed (1, 728px) px;
+  gap: 44px;
+  opacity: 0px;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.banner__text2 {
+  width: 770px;
+  height: 60px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.about {
+  width: Hug (1, 728px) px;
+  height: Hug (284px) px;
+  top: 881px;
+  padding: 82px 236px 82px 236px;
+  gap: 56px;
+  opacity: 0px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-gray-1);
+}
+  
+
+.about__text1 {
+  width: 620px;
+  height: 46px;
+  gap: 0px;
+  opacity: 0px;
+  color: var(--color-gray-6);
+
+}
+
+.about__text2 {
+  width: 580px;
+  height: 120px;
+  gap: 0px;
+  opacity: 0px;
+  text-align: justify;
+  color: var(--color-gray-5);
+}
+
+.btn2 {
+  width: 8.875rem;
+  height: Fixed (60px) px;
+  padding: 20px 32px 20px 32px;
+  gap: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background-color: var(--color-band-2);
+  color: var(--color-gray-7);
+  font-weight: 600;
+}
+
+.faq {
+  width: Fixed (1, 728px) px;
+  height: Hug (1, 132px) px;
+  top: 1165px;
+  padding: 82px 236px 82px 236px;
+  gap: 200px;
+  opacity: 0px;
+
+  display: flex;
+  background-color: var(--color-gray-2);
+  
+}
+
+.btn2__faq {
+  width: 14.125rem;
+  height: 3.75rem;
+  background-color: var(--color-band-2);
+  color: var(--color-gray-7);
+  font-weight: 600;
+}
+
+.faq__left {
+  width: 300px;
+  height: 280px;
+  gap: 10px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.faq__left > h2{
+  color: var(--color-gray-6);
+}
+
+.faq__left > p{
+  color: var(--color-gray-4);
+}
+
+.faq__right {
+  width: Fixed (583px) px;
+  height: Hug (968px) px;
+  gap: 60px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__right__li {
+  list-style: none;
+  gap: 0.625rem;
+  margin: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+
+.comments {
+  width: Fixed (1, 728px) px;
+  height: Hug (1, 132px) px;
+  top: 1165px;
+  padding: 82px 236px 82px 236px;
+  gap: 75px;
+  opacity: 0px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: var(--color-gray-1);
+  color: var(--color-gray-5);
+}
+
+.comment__left {
+  width: 400px;
+  height: Hug (1, 223px) px;
+  gap: 82px;
+  opacity: 0px;
+
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.comment__left__quadro1 {
+  width: 180px;
+  height: 66px;
+  gap: 2px;
+  opacity: 0px;
+
+  justify-content: space-around;
+  /* text-align: justify; */
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  color: var(--color-gray-6);
+}
+.comment__left__quadro2 {
+  width: 412px;
+  height: 179px;
+  gap: 0px;
+  opacity: 0px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-weight: 400;
+  color: var(--color-gray-5);
+}
+
+p.comment__left__quadro2 {
+  font-weight: 400; 
+  font-size: 15px;
+  line-height: 1.6875rem;
+  
+}
+
+
+
+.comment__right {
+  width: 280px;
+  height: Hug (443px) px;
+  padding: 30px 0px 0px 86.4px;
+  gap: 35px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  width: 1,728px;
+  height: Fixed (102px) px;
+  top: 3684px;
+  padding: 50px 75px 50px 775px;
+  gap: 10px;
+  opacity: 0px;
+  background-color: var(--color-gray-2);
+  color: var(--color-gray-6);
+  text-align: justify;
+}
+
+
