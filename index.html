@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style/index.css" />
+    <script src="./src/script/index.js" defer></script>
     <title>Página Institucional Genérica</title>
   </head>
   <body>
     <header>
       <div class="header">
         <img src="./src/asset/logo.svg" alt="" />
-        <button class="componente">Entrar para próxima turma</button>
+        <button id="showMessage" class="componente">
+          Entrar para próxima turma
+        </button>
       </div>
     </header>
     <main>
-      <section >
+      <section>
         <div class="banner">
-          <h1 class="banner__text1">Desenvolvendo <span>suas</span> próximas habilidades</h1>
+          <h1 class="banner__text1">
+            Desenvolvendo <span>suas</span> próximas habilidades
+          </h1>
           <p class="banner__text2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -40,7 +45,7 @@
 
       <section>
         <div class="faq">
-          <!-- LEFT SIDE -->
+          
           <div>
             <div class="faq__left">
               <h2>Dúvidas frequentes</h2>
@@ -49,7 +54,9 @@
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </p>
-              <button class="btn2__faq">Entrar para próxima turma</button>
+              <button id="showMessage2" class="btn2__faq">
+                Entrar para próxima turma
+              </button>
             </div>
           </div>
 
@@ -97,11 +104,11 @@
         </div>
       </section>
 
-      <!-- ====== Section Comments ====== -->
+      
       <section>
         <div class="comments">
-          <!-- RIGHT SIDE -->
-          <div >
+         
+          <div>
             <div class="comment__right">
               <h2>O que nossos alunos comentam?</h2>
               <p>
@@ -111,11 +118,11 @@
               </p>
             </div>
           </div>
-          <!-- LEFT SIDE -->
+          
           <ul>
-            <!-- Comment 1 -->
+            
             <li class="comment__left">
-              <div class="comment__left__quadro1" >
+              <div class="comment__left__quadro1">
                 <h3>Júlia Lima</h3>
                 <p>Aluna na turma 2019</p>
               </div>
@@ -126,20 +133,20 @@
                 normal distribution of letters, as opposed to using 👋🏿
               </p>
             </li>
-            <!-- Comment 2 -->
+            
             <li class="comment__left">
               <div class="comment__left__quadro1">
                 <h3>Carlos Ino</h3>
                 <p>Aluno na turma 2020</p>
               </div>
-              <p class="comment__left__quadro2"> 
+              <p class="comment__left__quadro2">
                 It is a 🎨 established fact that a reader will be distracted by
                 the readable content of a page when looking at its layout. The
                 point of using Lorem Ipsum is that it has a more-or-less normal
                 distribution of letters, as opposed to using
               </p>
             </li>
-            <!-- Comment 3 -->
+            
             <li class="comment__left">
               <div class="comment__left__quadro1">
                 <h3>Camila Dias</h3>
@@ -152,7 +159,7 @@
                 normal distribution of letters, as opposed to using ❤️ ❤️ ❤️
               </p>
             </li>
-            <!-- Comment 4 -->
+            
             <li class="comment__left">
               <div class="comment__left__quadro1">
                 <h3>João Vaz</h3>
@@ -165,7 +172,7 @@
                 normal distribution of letters, as opposed to using 🕓 🕓 🕓️
               </p>
             </li>
-            <!-- Comment 5 -->
+          
             <li class="comment__left">
               <div class="comment__left__quadro1">
                 <h3>Gio Oliveira</h3>
@@ -184,10 +191,31 @@
     </main>
 
     <footer>
-      <p>Generic Course </p>
+      <p>Generic Course</p>
     </footer>
 
-    <!-- ====== Modal ====== -->
-    <dialog></dialog>
+    
+    
+      <dialog id="modalContainer" class="modalContainer">
+        <section class="modalContainer__l1">
+          <h1>Cadastro</h1>
+          <button id="closeModal">X</button>
+        </section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+          aspernatur animi nisi doloremque maxime asperiores dolorem natus
+          illum, voluptates explicabo iure incidunt reprehenderit, ea veniam
+          rerum. Doloremque quisquam vitae eum.
+        </p>
+        <input
+          class="modalContainer__input"
+          type="text"
+          placeholder="digitar email"
+        />
+        <button class="modalContainer__button">
+          Entrar na lista para a próxima turma
+        </button>
+      </dialog>
+    
   </body>
 </html>
